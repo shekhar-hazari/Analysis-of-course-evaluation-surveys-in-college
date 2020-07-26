@@ -1,0 +1,19 @@
+# Analysis-of-course-evaluation-surveys-in-college
+# Analysing Variables That Influence University Course Evaluations
+At most universities, teaching is evaluated through a process whereby students complete course experience surveys, rating courses in response to questions regarding the content, clarity of material, presentation, and other factors. These questions are typically distilled into a single score that is supposed to reflect overall teaching quality.
+Prior research has indicated that many factors can influence student feedback, and these may include things that are directly asked as part of the surveys (Were the teaching staff good at explaining things? Did the staff work hard to make the course interesting?) and other factors that are not explicitly asked (Was the lecture room too crowded and noisy? Did an unexpected event occur part-way through the semester that required fundamental changes in teaching delivery? Are the teaching staff attractive?) Daniel Hamermesh and Amy Parker, two researchers form the USA, collected data to investigate the question
+of whether teaching evaluations are influenced by the attractiveness of teaching staff. In this assignment, you will be analysing their data to carry out a preliminary investigation into answering this question. The data was collected at the University of Texas at Austin, USA, and includes information about 455 courses, taught by teaching staff in various departments (note that some staff taught multiple courses included in the data set). Courses were of various sizes in terms of the number of enrolled students. Each course was evaluated using student surveys, with responses to the question “Overall, this course was…?” being collected on a 5-level ordinal scale with a minimum score of (1) “very unsatisfactory” and a maximum score of (5) “excellent”. Information was obtained on each faculty member, based on characteristics including their gender, whether they are on a tenure track (roughly speaking, working towards being offered a permanent position at their university), whether they are part of a minority group, and whether they received their education in an English-speaking country.
+Separately, a picture of each teaching staff member was rated by 6 undergraduate students. Hamermesh and Parker describe the rating process as follows: “The raters were told to use a 1 (lowest) to 10 (highest) rating scale, to concentrate on the physiognomy of the instructor in the picture, to make their ratings independent of age, and to keep 5 in mind as an average” [1]. The ratings – subsequently referred to as “beauty” scores – were then normalised to have a mean score of zero. (This means that someone with a rating greater than zero was judged to be more “beautiful” than the average, while someone with a negative score was judged to be less “beautiful” than the average”.)
+
+Data File
+The raw research data that I have analyzed is in the file profEvaluations.csv
+Notice that each row of the original file corresponds to observations about a single course, and includes details such as number of students, and course evaluation score. It also includes information about the teaching staff member who taught the course, including a staffid, their age, and their educational background. Notice that a particular teaching staff member can teach more than one course – that is, their individual information may be repeated for each course that they teach.
+
+Goal of Analysis
+The broad goal is to investigate the effect that different variables such as age, gender, and beauty, have on course evaluation scores. This is done only using SQL and no other tools.
+
+Note: This is a subset of the data collected in original report therefore the results os analysis may vary
+
+References
+D. Hamermesh, and A. Parker, “Beauty in the classroom: instructors’ pulchritude and putative
+pedagogical productivity,” Economics of Education Review, vol. 24, pp. 369-376, 2005.
